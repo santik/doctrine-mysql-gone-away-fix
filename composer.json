@@ -1,0 +1,35 @@
+{
+    "name": "santik/doctrine-mysql-gone-away-fix",
+    "description": "Reconnect when Doctrine MySql has gone away",
+    "keywords": ["mysql","doctrine","reconnect","refresh","connection","has gone away","exception"],
+    "license": "Apache License Version 2.0",
+    "authors": [
+        {
+            "name": "Alexander Fedorets",
+            "email": "alexander.fedorets@gmail.com"
+        }
+    ],
+    "require": {
+        "php" : "^5.4 || ^7.0",
+        "doctrine/dbal": ">=2.3,<2.6-dev"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^4.8 || ^5.2",
+        "friendsofphp/php-cs-fixer": "^1.11"
+    },
+    "autoload": {
+        "psr-4": { "Santik\\DoctrineMySQLGoneAwayFix\\": "src/" }
+    },
+    "autoload-dev": {
+        "psr-4": { "Santik\\DoctrineMySQLGoneAwayFix\\": "tests/unit/" }
+    },
+    "config": {
+        "preferred-install": "dist",
+        "bin-dir": "bin"
+    },
+    "minimum-stability": "stable",
+    "scripts": {
+        "phpcs": "php-cs-fixer fix --level=psr2 -v --diff --dry-run src/",
+        "phpcs-fix": "php-cs-fixer fix --level=psr2 -v --diff src/"
+    }
+}
