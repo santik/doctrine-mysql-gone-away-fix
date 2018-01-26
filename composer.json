@@ -2,7 +2,7 @@
     "name": "santik/doctrine-mysql-gone-away-fix",
     "description": "Reconnect when Doctrine MySql has gone away",
     "keywords": ["mysql","doctrine","reconnect","refresh","connection","has gone away","exception"],
-    "license": "Apache License Version 2.0",
+    "license": "proprietary",
     "authors": [
         {
             "name": "Alexander Fedorets",
